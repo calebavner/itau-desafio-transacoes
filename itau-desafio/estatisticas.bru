@@ -1,0 +1,18 @@
+meta {
+  name: estatisticas
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:8080/estatisticas
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+      "valor": 123.45,
+      "dataHora": "2025-04-05T08:34:56.789-03:00"
+  }
+}

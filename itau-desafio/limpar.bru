@@ -1,0 +1,18 @@
+meta {
+  name: limpar
+  type: http
+  seq: 4
+}
+
+delete {
+  url: http://localhost:8080/transacao
+  body: none
+  auth: inherit
+}
+
+body:json {
+  {
+      "valor": 123.45,
+      "dataHora": "2025-04-05T08:34:56.789-03:00"
+  }
+}
